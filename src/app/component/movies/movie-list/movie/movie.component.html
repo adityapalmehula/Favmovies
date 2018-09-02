@@ -1,0 +1,22 @@
+
+<!-- movie information to be dislayed in movie-list -->
+<div class="row">
+  <div class="col-md-4 col-sm-5">
+   <img class="img-fluid d-block" [attr.src]="movieUrl+movie.poster_path" alt="Image not found">
+ </div>
+ <div class="col-md-8 col-sm-7">
+  <h5 class="card-title">{{movie.title}}</h5>
+  <div class="card-body">
+   <p class="card-text"><strong>Overview:</strong>&nbsp;{{(movie.overview .length>70)? (movie.overview | slice:0:140)+'..':(movie.overview)}}</p>
+   <p class="card-text"><strong>Rating:</strong> {{movie.vote_average}}</p>
+ </div>
+</div>
+</div>
+<div *ngIf="flag === 'search'">
+  <a class="btn btn-primary btn-add" (click)="addToFavorite(movie)" >Add to favourite</a>
+</div>
+<div *ngIf="flag === 'list'">
+  <a class="btn btn-primary btn-add" (click)="deleteMovie(movie)" >Delete</a>
+</div>
+
+<!-- ends here -->

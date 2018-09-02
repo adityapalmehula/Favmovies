@@ -1,0 +1,10 @@
+<!-- For movie Search bar -->
+<div class="col-md-6 col-sm-6 my-3 mx-auto">
+  <div class="input-group">
+    <input type="text" (keyup.enter)="searchMovie()" class="form-control"  [(ngModel)]="movieSearch" placeholder="Search movie...">
+    <span class="input-group-btn">
+      <button class="btn btn-secondary" type="submit" (click)="searchMovie()"> <i class="fa fa-search"></i></button>
+    </span>
+  </div>
+</div>
+<!-- Seach bar ends here -->

@@ -1,0 +1,85 @@
+
+/*css for movie title*/
+h5{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* css for very small devices */
+@media (max-width: 576px){
+  h5{
+    text-align: center;
+  }
+  img{
+    margin: 0 auto;
+  }
+  .card{
+    margin:0 auto;
+    margin-bottom: 22px;
+    margin-top: 30px;
+    padding: 16px;
+    box-shadow: 5px 10px #888888;
+  }
+  .card-text{
+   font-family: 'Nunito', sans-serif;
+   font-size: 14px;
+   margin-left: 0px;
+   justify-content: center;
+ }
+
+}
+
+/* css for small devices */
+@media (min-width: 576px) and (max-width: 768px) {
+  .card{
+    height:90%; 
+    margin:0 auto;
+    margin-bottom: 22px;
+    padding: 16px;
+    box-shadow: 5px 10px #888888;
+  }
+  .card-text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    margin-left: 0px;
+  }
+  h5{
+    font-size: 12px;
+  }
+}
+
+/* css for  medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card{
+    height:90%;  
+    margin-bottom:22px;
+    padding: 16px;
+    box-shadow: 5px 10px #888888;
+  }
+  .card-text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    margin-left: 0px;
+  }
+}
+
+/* css for large devices */
+@media (min-width: 992px) and (max-width: 1500px) {
+  .card{
+    height:90%; 
+    margin-bottom: 22px;
+    margin-top: 30px;
+    padding: 14px;
+    box-shadow: 5px 10px #888888;
+  }
+  .card-text{
+    font-family: 'Nunito', sans-serif;
+    margin-left: 0px;
+    word-wrap: break-word;
+  }
+
+}
+
+
+
+
+

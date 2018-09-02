@@ -1,0 +1,11 @@
+<!-- movie list  -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-6" *ngFor="let movie of movies"> 
+      <div class="card">
+       <app-movie [movie]="movie" [flag]="flag"></app-movie>
+     </div>
+   </div>
+ </div>
+</div>
+
